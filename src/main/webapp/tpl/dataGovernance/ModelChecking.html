@@ -1,0 +1,48 @@
+<div id="ModelChecking">
+    <form id="metamodelEditForm" class="yunpi-form">
+        <div class="row" id="ModelCheckD">
+            <div class="input-group">
+                <label><span>*</span>申请标题</label>
+                <input type="hidden" name="id" required="required">
+                <input type="text" class="form-control" name="metamodelName" placeholder="申请标题" required="required" regex="^.{2,20}$">
+            </div>
+            <div class="input-group">
+                <label>描述</label>
+                <textarea class="form-control" name="metamodelDesc" placeholder="描述，不超过255字" regex="^.{0,255}$"></textarea>
+            </div>
+            <div class="col-md-8 RelationDiagram">
+                <div id="relationship"></div>
+            </div>
+            <div class="col-md-4 RelationData">
+                <div  class="Application right-tools">
+                    <lable>申请模型:</lable>
+                    <select id="ApplicationSel">
+                    </select>
+                </div>
+                <div class="ApplicationSurface">
+                    <lable>申请数据:</lable>
+                    <table class="ApplicationStyle">
+                        <thead>
+                        <tr>
+                            <td>字段名</td>
+                            <td>字段描述</td>
+                        </tr>
+                        </thead>
+                        <tbody id="ApplicationTable"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="input-group">
+                <label><span>*</span>申请标题</label>
+                <input type="radio" id="styleA" name="judgeStyle" value="1" checked>
+                <label for="styleA">通过</label>
+                <input type="radio" id="styleB" name="judgeStyle" value="2">
+                <label for="styleB">不通过</label>
+            </div>
+            <div class="input-group">
+                <label>理由</label>
+                <textarea class="form-control" name="metamodelDesc" placeholder="理由，不超过255字" regex="^.{0,255}$"></textarea>
+            </div>
+        </div>
+    </form>
+</div>

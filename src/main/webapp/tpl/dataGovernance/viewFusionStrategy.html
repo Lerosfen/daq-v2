@@ -1,0 +1,40 @@
+<style>
+    #mainTable>thead>tr>td:first-child, #mainTable>tbody>tr>td:first-child {
+        width: 200px !important;
+    }
+    #mainTable>thead>tr>td:nth-child(2), #mainTable>tbody>tr>td:nth-child(2) {
+        width: 240px !important;
+    }
+</style>
+<div>
+    <div class="input-group input-Groups" style="margin: 10px">
+        <label class="tblTypeTitle">融合名称</label>
+        <input style="margin-left: 15px" type="text" name="fuseName" class="form-control" readonly="readonly">
+    </div>
+    <div class="paintPage" style="margin-left: 0">
+        <div id="paint" style="width: 50%"></div>
+        <div class="tableContent"  style="width: 50%">
+            <span class="mainKey">主键</span>
+            <select  name="selMainKey" multiple="multiple" data-animate="slide">
+                <option value="1">元数据c</option>
+                <option value="2">元数据f</option>
+                <option value="3">元数据b</option>
+                <option value="4">元数据s</option>
+                <option value="5">元数据p</option>
+            </select>
+            <span class="nodata">暂无数据</span>
+            <table class="form-metadata-table selTbl" id="fillTbl" style="display: none">
+                <thead>
+                <tr><td>字段</td><td>描述</td><td>关联字段</td><td>扩展融合</td></tr>
+                </thead>
+                <tbody id="tblFieldTable"></tbody>
+            </table>
+            <table class="form-metadata-table selTbl" id="mainTable">
+                <thead>
+                <tr><td>字段</td><td>描述</td></tr>
+                </thead>
+                <tbody id="mainTableTbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>

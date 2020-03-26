@@ -1,0 +1,149 @@
+/**
+登录页样式
+ */
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url('../img/login/bg.png') no-repeat;
+    position: relative;
+    background-color: #1d2053;
+}
+/*
+canvas{
+    height: 500px !important;
+}
+*/
+div.container{
+    z-index: 100;
+}
+
+div.header{
+    width: 139px;
+    height: 23px;
+    background: url('../img/login/yunpilogo.png') no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    z-index: 999999;
+}
+/*
+div.loginImg{
+    width: 800px;
+    height: 838px;
+    background: url('../img/login/login-img.gif') no-repeat;
+    margin-left: -160px;
+    margin-top: 180px;
+    z-index: 999999;
+}
+*/
+div.loginImg{
+    width: 800px;
+    height: 838px;
+    background: url('../img/login/login-img.gif') no-repeat;
+    position: absolute;
+    left: 230px;
+    top: 180px;
+    z-index: 1000000;
+}
+div.loginTitle{
+    position: absolute;
+    right: 370px;
+    top: 260px;
+    color: #fff;
+    z-index: 999999;
+    text-align:center;
+}
+div.loginTitle h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+div.loginTitle p{
+    font-size: 16px;
+}
+div.loginForm{
+    width: 360px;
+    height: 380px;
+    background-color: #fff;
+    position: fixed;
+    right: 416px;
+    top: 400px;
+    z-index: 999999;
+}
+div.loginForm p.formTitle{
+    text-align: center;
+    font-size: 24px;
+    color: #424242;
+    margin-top: 30px;
+}
+div.loginForm input{
+    width: 320px;
+    height: 48px;
+    margin: 0 auto;
+    padding-left: 60px;
+    margin-top: 30px;
+}
+div.loginForm span.inputIconL{
+    display: inline-block;
+    width: 19px;
+    height: 22px;
+    background: url("../img/login/name.png") no-repeat;
+    position: absolute;
+    left: 40px;
+    top: 108px;
+}
+div.loginForm span.upwdL{
+    background: url("../img/login/password.png") no-repeat;
+    top: 185px;
+}
+div.loginForm span.inputIconR{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: url("../img/login/delete.png") no-repeat;
+    position: absolute;
+    left: 300px;
+    top: 112px;
+}
+div.loginForm span.upwdR{
+    width: 19px;
+    background: url("../img/login/keyboard.png") no-repeat;
+    top: 190px;
+}
+div.loginForm button.loginBtn{
+    text-align: center;
+    width: 320px;
+    height: 50px;
+    background: linear-gradient(160deg, #00a7ff 0%, #00a3fe 100%);
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+div.loginForm p.attention{
+    font-family: "Microsoft YaHei UI Light";
+    color: #919699;
+    margin-left: 20px;
+}
+div.loginForm p.attentionTitle{
+    margin-top: 10px;
+}
+div.loginFooter{
+    position: absolute;
+    left: 716px;
+    bottom: -999px;
+    line-height: 20px;
+    z-index: 999999;
+}
+div.loginFooter span.logo{
+    display: inline-block;
+    width: 174px;
+    height: 17px;
+    background: url('../img/login/login-logo.png') no-repeat;
+}
+div.loginFooter span{
+    color: #6cc7ef;
+    margin-bottom: -3px;
+    margin-left: 10px;
+}

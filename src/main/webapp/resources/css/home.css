@@ -1,0 +1,163 @@
+/**
+首页样式
+ */
+body{
+    font-family: "Microsoft YaHei";
+    width: 100%;
+    height: calc(100vh);
+    margin: 0;
+    padding: 0;
+    background-color: #CDD4DE;
+}
+.home-left{
+    width: 260px;
+    min-height: 100%;
+    height: auto;
+    background-color: #091424;
+    margin:0px;
+    padding: 0;
+}
+.home-title{
+    height:90px;
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+    background: linear-gradient(top, #1d66dc, #1149b9);
+    background: -ms-linear-gradient(top, #1d66dc, #1149b9);
+    background: -webkit-linear-gradient(top, #1d66dc, #1149b9);
+    background: -moz-linear-gradient(top, #1d66dc, #1149b9);
+}
+#basicMenu{
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+
+.home-body{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100vw - 300px);
+    height: calc(100vh - 20px);
+    margin: 20px 20px 0 20px;
+    background-color: #F1F6FD;
+    border-radius:5px 5px 0 0;
+}
+.body-header{
+    height: 70px;
+}
+
+.body-content{
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: #FFFFFF;
+}
+
+.body-header img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 36px;
+}
+
+.body-header lable{
+    margin-left: 86px;
+    width: 500px;
+}
+.sys-name{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color:#515863;
+    margin-top: 20px;
+}
+.menu-name{
+    display: inline-block;
+    font-size: 14px;
+    color:#4B90FF;
+    margin-top: 20px;
+}
+
+.menu-item{
+    display: inline-block;
+    font-size: 14px;
+    color:#79808B;
+    margin-top: 20px;
+}
+.self-tool{
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    height: 10px;
+    line-height: 10px;
+}
+.self-tool lable{
+    font-size: 14px;
+    color:#707070;
+}
+.user-name{
+    display: inline-block;
+}
+.self-tool span{
+    margin: 0 0 0 35px;
+    color: #1D66DC;
+    font-size: 14px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    cursor:pointer;
+}
+.self-tool a{
+    margin: 0 0 0 35px;
+    color: #1D66DC;
+    font-size: 14px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* 时间选择器样式重做 */
+input[type=date]::-webkit-inner-spin-button { display: none; }
+/* 表格进度条样式 */
+.progress-bar-info{
+    background-color: #4b90ff;
+}
+.progress{
+    margin: 0;
+}
+/* tab样式 */
+/*
+ul.nav li{
+    width: 180px;
+    height: 40px;
+    background: #4b90ff;
+    text-align: center;
+    margin-left: 1px;
+    border-radius: 3px;
+}
+ul.nav li:hover{
+    background: #4474e1;
+}
+.nav-tabs > li > a:hover {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+}
+ul.nav li.active{
+    background: #f1f6fd;
+    border: 1px solid #ddd;
+}
+ul.nav li.active a{
+    color: #5d656a;
+    text-decoration: none;
+}
+ul.nav li.active a:hover{
+    color: #5d656a;
+}
+
+ul.nav li a{
+    color: #fff;
+}
+*/

@@ -1,0 +1,368 @@
+#operationMonitor{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    height: calc(100vh - 100px);
+}
+#DataQuality{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+.EchantPartent{
+    position: relative;
+    height: 205px;
+}
+#Operation{
+    background: #fff;
+    height: 440px;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 40.666667%;
+}
+.progress-bar-success {
+    background-color: #4fda9d;
+}
+#OperationCpu{
+    background: #fff;
+    height: 257px;
+    border-radius: 4px;
+    width: 24.29%;
+    margin-right: 10px;
+}
+#MemoryMonitor{
+    background: #fff;
+    height: 257px;
+    border-radius: 4px;
+}
+#DiskMonitoring{
+    background: #fff;
+    border-radius: 4px;
+}
+#OperaIconBox{
+    background: #fff;
+    height: 440px;
+    border-radius: 4px;
+    width: 41.3%;
+}
+#Memory{
+    background: #fff;
+    height: 440px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+#RealMonitoringBox{
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 400px;
+}
+#CpuOperation,#pie{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#CpuOperationOne{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    padding-left: 0;
+}
+#CpuOperationOne .progress{
+    overflow: visible;
+}
+.OperaPartent{
+    width: 100%;
+    height:536px;
+    display: flex;
+    justify-content: space-around;
+    background: #f6f9ff;
+}
+#CpuOperationBox{
+    width: 100%;
+    height: 205px;
+    background: #f6f9ff;
+}
+#UtilizationRate{
+    width: 35.33333333%;
+    height:100%;
+    background: #fff;
+    position: relative;
+    height: 205px;
+}
+#UtilizationRateOther,#UtilizationRateInner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#total{
+    width: 23%;
+    height: 205px;
+    background: linear-gradient( 45deg, rgb(237, 240, 246) 0, rgb(237, 240, 246) 25%, transparent 25%, transparent 50%, rgb(237, 240, 246) 50%, rgb(237, 240, 246) 75%, transparent 75%, transparent );
+    background-size: 10px 10px;
+}
+#TotalMumber,#TotalMemory,#OperaMumber,#OperaMemory{
+    text-align: center;
+}
+#TotalMumber,#OperaMumber,#OperaMumberBottom {
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #3d8dff;
+    padding-top: 62px;
+}
+#TotalMumber span,#OperaMumber span,#OperaMumberBottom span{
+    color: #6d747e;
+ }
+#TotalMemory,#OperaMemory,#OperaMemoryBottom{
+    color: #6d747e;
+    margin-top: 42px;
+    font-size: 14px;
+}
+#OperaIconTwo{
+    margin-top: 10px;
+    border-bottom: solid 1px #ebebeb;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+#OperaIcontion,#CpuOperationCategory,#OperaPartentLeft{
+    background: #fff !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+#OperaTotal{
+    width: 23%;
+    height: 100%;
+    background: linear-gradient( 45deg, rgb(237, 240, 246) 0, rgb(237, 240, 246) 25%, transparent 25%, transparent 50%, rgb(237, 240, 246) 50%, rgb(237, 240, 246) 75%, transparent 75%, transparent );
+    background-size: 10px 10px;
+}
+#OperaTotalTop{
+    height: 276px;
+}
+#OperaTotalBottom{
+    text-align: center;
+}
+#UsingInterval{
+    text-align: center;
+    font-size: 14px;
+}
+#UsingInterval #Highest{
+    color: #3cf470;
+}
+#UsingInterval #minimum{
+    color: #f2c62c;
+}
+#Statistics{
+    padding-left: 0;
+    padding-right: 0;
+    background: #fff;
+}
+#MontitorTotal{
+    height: 310px;
+    background: linear-gradient( 45deg, rgb(237, 240, 246) 0, rgb(237, 240, 246) 25%, transparent 25%, transparent 50%, rgb(237, 240, 246) 50%, rgb(237, 240, 246) 75%, transparent 75%, transparent );
+    background-size: 10px 10px;
+}
+#MontitorRate{
+    background: #fff;
+    position: relative;
+    height: 310px;
+}
+#MontitorBox{
+    width: 100%;
+    height: 310px;
+    background: #f6f9ff;
+}
+#totalNumber{
+    color: #2a7aff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+#FusionNumber{
+    color: #4fda9d;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+#totalNumber span,#totalName,#FusionNumber span,#FusionName{
+    color: #838383;
+    font-size: 14px;
+    font-weight: initial;
+    margin: 0;
+    padding: 0;
+}
+#TotalData,#populationMonitor,#ChangeMonitoring{
+    margin-right: 10px;
+}
+#populationMonitor,#qualityChangeMonitoring{
+    background: #fff;
+    height:275px;
+    border-radius: 4px;
+    width: 49.65%;
+}
+#TotalData{
+    background: #fff;
+    height:254px;
+    border-radius: 4px;
+}
+#ChangeMonitoring,#ModelTableChange{
+    background: #fff;
+    height:309px;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 49.65%;
+}
+#populationMonitor,#qualityChangeMonitoring{
+    height: 329px;
+}
+#populationMonitorBox{
+    height: 183px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#populationMonitor,#qualityChangeMonitoring,#ModelTableChange{
+    margin-top: 10px;
+}
+#TotalDataButtom{
+    margin-top: 42px;
+}
+#MonitoringButtom{
+    margin-top: 15px;
+}
+#TotalDataSourcesNum,#AcquisitionInterfaceNum,#AcquisitionTargetNum,#dataModelNum{
+    width: 120px;
+    background: url("/resources/img/dataQuality/icon.png") no-repeat;
+    background-size: 100% 100%;
+}
+#ConformityConstraintsNum,#NotConformityNum{
+    width: 157px;
+    background: url("/resources/img/monitoring.png") no-repeat;
+    background-size: 100% 100%;
+}
+#TotalDataName p,#InterfaceName p,#AcquisitionName p,#ModelName p{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #1d66dc;
+    margin: 0;
+    text-align: center;
+    height: 55px;
+}
+#TotalDataName,#InterfaceName,#AcquisitionName,#ModelName{
+    padding-top: 15px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#TotalDataName p b,#InterfaceName p b,#AcquisitionName p b,#ModelName p b{
+    width: 31px;
+    height: 55px;
+    background: url("/resources/img/dataQuality/number.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    line-height: 55px;
+    margin-left: 9px;
+}
+#TotalDataName  span,#InterfaceName span,#AcquisitionName span,#ModelName span{
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #1d66dc;
+    margin: 0;
+    text-align: center;
+    padding-left: 6px;
+}
+#ConformityConstraintsNum p,#NotConformityNum p{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #1d66dc;
+    margin: 0;
+    text-align: center;
+    padding-top: 35px;
+}
+#TotalDataSources,#AcquisitionInterface,#AcquisitionTarget,#dataModel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: inherit;
+}
+#ConformityConstraints,#NotConformity,#SituationStatistics,#ModelQuantity,#DailyStatistics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#DailyVariation,#ModelQuantityName{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #4b90ff;
+    position: absolute;
+    left: 3%;
+    top: 15px;
+}
+#DaliyTotal,#ModelQuantityTotal{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#TargetsStatisticsName,#ModelQuantityNum{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+#DaliyTotal p,#ModelQuantityTotal p{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 14px;
+    align-items: end;
+    font-size: 22px;
+    color: #1d66dc;
+}
+#DaliyTotal p span,#ModelQuantityTotal p span{
+    font-size: 14px;
+    color: #4b6e95;
+}
+#AcquisitionTargetNum p span,#dataModelNum p span,#ConformityConstraintsNum p span,#NotConformityNum p span{
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #6d747e;
+}
+#TotalDataDiv,#InterfaceDiv,#Acquisition,#ModelDiv{
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #545d68;
+    text-align: center;
+    padding-top: 20px;
+}
+#ConformityConstraintsName,#NotConformityName{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #545d68;
+    text-align: center;
+    padding-top: 15px;
+}

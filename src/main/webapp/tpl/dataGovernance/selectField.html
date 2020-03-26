@@ -1,0 +1,188 @@
+<style>
+    div.rulesContainer{
+        width: 100%;
+        padding: 30px;
+        margin-top: -10px;
+    }
+    div.rulesContainer>div{
+        float: left;
+    }
+    div.rulesContainer>div.defaultRules{
+        width: 20%;
+    }
+    div.rulesContainer>div.customRules{
+        width: 20%;
+    }
+    div.rulesContainer>div.rulesConfig{
+        width: 60%;
+    }
+    div.rulesContainer>div.remark{
+        clear: both;
+    }
+    div.rulesContainer span.title{
+        font-size: 14px;
+        color: #7F8B97;
+        font-weight: bold;
+    }
+    ul{
+        list-style: none;
+    }
+    div.defaultRules>ul>li.rulesContent, div.customRules>ul>li.cRulesContent{
+        width: 140px;
+        height: 30px;
+        background: #4b90ff;
+        margin-top: 5px;
+        margin-left: -40px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 30px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    div.customRules>ul>li.cRulesContent{
+        background: #fff;
+        border:1px solid #4b90ff;
+        color: #4b90ff;
+    }
+    div.rulesConfig>div.configContent{
+        min-height: 500px;
+    }
+    .alert{
+        margin-bottom: 5px !important;
+    }
+    .form-controls{
+        width: 15%;
+        height: 34px;
+        padding: 6px 12px;
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+    div.configContent label{
+        font-size: 14px;
+        color: #7F8B97;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+    button.close{
+        background: transparent;
+        border: 0;
+        outline: none;
+        opacity: 1;
+    }
+    button.close span{
+        color: #f00;
+    }
+    button.close span:hover{
+        color: #f00;
+    }
+</style>
+<div>
+    <!--
+    <div class="yunpi-form">
+        <div class="input-group">
+            <label>字段：</label>
+            <select id="">
+                <option value="1">A字段</option>
+                <option value="2">A字段</option>
+                <option value="3">A字段</option>
+            </select>
+        </div>
+    </div>
+    -->
+    <div class="table-header-tools">
+        <span class="left-tools" style="left: 30px">
+            <lable style="font-weight: bold">字段：</lable>
+            <select id="fieldSel" class="form-control">
+                <option value="A字段">A字段</option>
+                <option value="B字段">B字段</option>
+                <option value="C字段">C字段</option>
+            </select>
+        </span>
+        <!--
+        <span class="right-tools" style="right: 6px">
+            <button id="addFieldBtn" type="button" class="yunpi-btn yunpi-btn-blue">完成</button>
+        </span>
+        -->
+    </div>
+    <div class="rulesContainer">
+        <div class="defaultRules">
+            <span class="title">默认规则：</span>
+            <ul>
+                <li class="rulesContent">两边去空格</li>
+                <li class="rulesContent">添加默认值</li>
+                <li class="rulesContent">去前缀</li>
+                <li class="rulesContent">去后缀</li>
+                <li class="rulesContent">加前缀</li>
+                <li class="rulesContent">加后缀</li>
+                <li class="rulesContent">长度补全</li>
+                <li class="rulesContent">字典转换</li>
+                <li class="rulesContent">Map映射转换</li>
+                <li class="rulesContent">字符串拆分</li>
+                <li class="rulesContent">正则替换</li>
+                <li class="rulesContent">字符串截取</li>
+                <li class="rulesContent">日期字符串转换</li>
+                <li class="rulesContent">数据类型转换</li>
+            </ul>
+        </div>
+        <div class="customRules">
+            <span class="title">自定义规则：</span>
+            <ul style="max-height: 490px;overflow-y: scroll;">
+                <!--
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>
+                <li class="cRulesContent">规则A</li>
+                <li class="cRulesContent">规则B</li>-->
+
+            </ul>
+        </div>
+        <div class="rulesConfig">
+            <span class="title">规则配置：</span>
+            <div class="configContent"></div>
+        </div>
+        <div class="remark">
+            <div class="input-group" style="margin: 30px 0 0 0 ">
+                <label>备注：</label>
+                <textarea id="remark" style="width: 1140px;height: 60px" readonly="readonly"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/controller/dataGovernance/cleanStrategy-mock.js"></script>

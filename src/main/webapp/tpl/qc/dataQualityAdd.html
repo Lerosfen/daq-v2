@@ -1,0 +1,35 @@
+<div>
+    <form id="dataQualityAddForm" class="yunpi-form">
+        <div class="input-group">
+            <label><span>*</span>任务名称</label>
+            <input type="text" class="form-control" name="taskName" placeholder="任务中文名称" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>执行时间规则</label>
+        </div>
+        <div id="cron"></div>
+        <div class="input-group">
+            <label><span>*</span>质量评定方式</label>
+            <span class="radio-inline">
+                <label><input type="radio" name="judgeStyle" value="1"> 问题数据量</label>
+            </span>
+            <span class="radio-inline">
+                <label><input type="radio" name="judgeStyle" value="2" checked="checked"> 问题数据占比</label>
+            </span>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>质量阈值</label>
+            <input type="text" class="form-control" name="dataQuality" placeholder=""  required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>待检表类型</label>
+            <select class="form-control"  name="checkTableType"  required="required">
+                <option value="">--请选择--</option>
+                <option value="1">采集目标表</option>
+                <option value="2">清洗目标表</option>
+                <option value="3">融合目标表</option>
+                <option value="4">实体模型表</option>
+            </select>
+        </div>
+    </form>
+</div>

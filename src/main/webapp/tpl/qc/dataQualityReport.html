@@ -1,0 +1,61 @@
+<div class="reportContent">
+    <div class="reportContentTop">
+        <p>
+            <span>检测表:</span>
+            <span id="Checklist"></span>
+        </p>
+        <p>
+            <span>检测时间:</span>
+            <span id="CheckT"></span>
+        </p>
+        <p>
+            <span>检测耗时:</span>
+            <span id="Detection"></span>
+        </p>
+    </div>
+    <form id="metadataSetupForm" class="yunpi-form">
+        <table class="form-metadata-table" id="metadataSetuptable">
+            <caption style="text-align: center;font-weight: bold;color: #0a0a0a">元数据信息表</caption>
+            <thead>
+            <tr>
+                <td>名称</td>
+                <td>描述</td>
+                <td>类型</td>
+                <td>长度</td>
+                <td>数据源</td>
+                <td>数据源规则</td>
+            </tr>
+            </thead>
+            <tbody id="reportTable"></tbody>
+        </table>
+    </form>
+    <div class="reportResult" style="padding: 0 100px;">
+        <b style="margin: 14px 0; display: block;text-align: center;">检测结果</b>
+            <div class="row" style="margin: 0">
+                <div class="col-xs-4 col-md-4 col-lg-4 ResultLeft">
+                    <p>
+                        <span>总数据量:</span>
+                        <span>9999条</span>
+                    </p>
+                    <p>
+                        <span>规范数据:</span>
+                        <span>9900条</span>
+                    </p>
+                    <p>
+                        <span>问题数据:</span>
+                        <span>99条</span>
+                    </p>
+                    <p>
+                        <span>问题数据占比:</span>
+                        <span>1%</span>
+                    </p>
+                </div>
+                <div class="col-xs-8 col-md-8 col-lg-8 ResultRight" style="height: 283px;background: #f3f3f3;width: 492px">
+                    <div id="ResultRight" style="height: 283px;width: 100%"></div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 ChangeTrend" style="height: 283px;width:753px">
+                    <div  id="ChangeTrend" style="height: 283px;width: 100%"></div>
+                </div>
+            </div>
+    </div>
+</div>

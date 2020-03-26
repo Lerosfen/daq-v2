@@ -1,0 +1,46 @@
+<div>
+    <form id="systemAddForm" class="yunpi-form">
+        <div class="input-group">
+            <label><span>*</span>系统名称：</label>
+            <input type="text" class="form-control" name="sysName" placeholder="系统中文名称" required="required" regex="chinese">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>描述：</label>
+            <textarea name="desc" class="form-control" placeholder="系统描述，不超过255字"  required="required" regex="^.{0,255}$"></textarea>
+        </div>
+        <!--<p>传输日志配置</p>-->
+        <div class="input-group">
+            <label><span>*</span>SFTP地址：</label>
+            <input type="text" name="SFTP" class="form-control" placeholder="SFTP地址" regex="" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>用户名：</label>
+            <input type="text" name="uname" class="form-control" placeholder="用户名" regex="" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>密码：</label>
+            <input type="password" name="upwd" class="form-control" placeholder="密码" regex="" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>保存天数：</label>
+            <input type="text" name="saveDay" class="form-control" placeholder="保存天数" regex="" required="required">
+        </div>
+        <!--<p>其他日志配置</p>-->
+        <div class="input-group">
+            <label><span>*</span>登录日志保存天数：</label>
+            <input type="text" name="loginSvDay" class="form-control" placeholder="登录日志保存天数" regex="" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>操作日志保存天数：</label>
+            <input type="text" name="operateSvDay" class="form-control" placeholder="操作日志保存天数" regex="" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>异常日志保存天数：</label>
+            <input type="text" name="unusualSvDay" class="form-control" placeholder="异常日志保存天数" regex="" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>调试日志保存天数：</label>
+            <input type="text" name="debuggerSvDay" class="form-control" placeholder="调试日志保存天数" regex="" required="required">
+        </div>
+    </form>
+</div>

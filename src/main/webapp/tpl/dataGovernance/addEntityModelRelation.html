@@ -1,0 +1,74 @@
+<style>
+    /*body{
+        user-select: none;
+    }*/
+    div.addContent{
+        width: 100%;
+        height: 460px;
+        display: flex;
+    }
+    #paint{
+        width: 50%;
+        height: 500px;
+        background: #F2F2F2;
+    }
+    div.form{
+        width: 50%;
+        height: 500px;
+    }
+</style>
+<div class="addContent">
+    <div id="paint"></div>
+    <div class="form">
+        <form class="yunpi-form" id="entityModelRelationAddForm">
+            <div class="input-group">
+                <label>主模型</label>
+                <label><span>*</span>主题</label>
+                <select class="form-control" name="mainModelTheme" required="required">
+                    <option selected="selected" value="">--请选择--</option>
+                    <option value="1">主题1</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label><span>*</span>模型</label>
+                <select class="form-control" name="mainModelName" required="required">
+                    <option selected="selected" value="">--请选择--</option>
+                    <option value="1">模型1</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>关联关系</label>
+                <label><span>*</span>主模型字段</label>
+                <select class="form-control" name="mainModelField" required="required">
+                    <option selected="selected" value="">--请选择--</option>
+                    <option value="1">字段1</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>一对N关联</label>
+                <label><span>*</span>辅模型字段</label>
+                <select class="form-control" name="supportModelField" required="required">
+                    <option selected="selected" value="">--请选择--</option>
+                    <option value="1">字段2</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>辅模型</label>
+                <label><span>*</span>主题</label>
+                <select class="form-control" name="supportModelTheme" required="required">
+                    <option selected="selected" value="">--请选择--</option>
+                    <option value="1">主题2</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label><span>*</span>模型</label>
+                <select class="form-control" name="supportModelName" required="required">
+                    <option selected="selected" value="">--请选择--</option>
+                    <option value="1">模型2</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/controller/dataGovernance/entityModelRelation.js"></script>
+<script src="/controller/dataGovernance/entityModelRelation-mock.js"></script>

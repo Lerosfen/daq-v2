@@ -1,0 +1,47 @@
+<div>
+    <div class="input-group input-Groups">
+        <label class="tblTypeTitle">融合名称</label>
+        <input style="margin-left: 15px" type="text" name="fuseName" class="form-control" placeholder="请输入融合名称">
+    </div>
+    <div class="input-group input-Groups">
+        <label class="tblTypeTitle">表类型</label>
+        <select class="form-control" name="tableTypeSel">
+            <option value="">--请选择--</option>
+            <option value="1">采集目标</option>
+            <option value="2">清洗目标</option>
+            <option value="3">融合目标</option>
+        </select>
+    </div>
+    <div class="paintPage">
+        <div class="modelContent">
+            <div class="model daqTbl">采集表1</div>
+            <div class="model daqTbl">采集表2</div>
+            <div class="model daqTbl">采集表3</div>
+            <div class="model cleanTbl">清洗表1</div>
+            <div class="model cleanTbl">清洗表2</div>
+            <div class="model fuseTbl">融合表1</div>
+            <div class="model fuseTbl">融合表2</div>
+            <div class="model fuseTbl">融合表3</div>
+            <div class="model fuseTbl">融合表4</div>
+        </div>
+        <div id="paint"></div>
+        <div class="tableContent">
+            <span class="mainKey">主键</span>
+            <select  name="selMainKey" data-live-search-placeholder="请选择元数据" multiple="multiple" data-animate="slide"></select>
+            <span class="nodata">暂无数据</span>
+            <table class="form-metadata-table selTbl" id="fillTbl" style="display: none">
+                <thead>
+                <tr><td>字段</td><td>描述</td><td>关联字段</td><td>扩展融合</td></tr>
+                </thead>
+                <tbody id="tblFieldTable"></tbody>
+            </table>
+            <table class="form-metadata-table selTbl" id="mainTable">
+                <thead>
+                <tr><td><input type="checkbox" name="checkAllField"></td><td>字段</td><td>描述</td></tr>
+                </thead>
+                <tbody id="mainTableTbody"></tbody>
+            </table>
+            <button id="saveAddBtn" type="button" class="yunpi-btn yunpi-btn-blue saveBtn"><span class="glyphicon glyphicon-floppy-disk"></span>保存</button>
+        </div>
+    </div>
+</div>

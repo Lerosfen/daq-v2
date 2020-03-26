@@ -1,0 +1,46 @@
+<div>
+    <form id="ftpDaqAddForm" class="yunpi-form">
+        <div class="input-group">
+            <label><span>*</span>策略名称</label>
+            <input type="text" class="form-control" name="strategyName" placeholder="策略中文名称" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>是否增量</label>
+            <span class="radio-inline">
+                <label><input type="radio" name="isInc" value="1" checked="checked"> 全量</label>
+            </span>
+            <span class="radio-inline">
+                <label><input type="radio" name="isInc" value="0"> 增量</label>
+            </span>
+        </div>
+        <div class="input-group">
+            <input type="hidden" class="form-control">
+        </div>
+        <div class="input-group" id="incMethods">
+            <label><span>*</span>增量方式</label>
+            <span class="radio-inline">
+                <label><input type="radio" name="incMethods" value="1"> MD5比对</label>
+            </span>
+            <span class="radio-inline">
+                <label><input type="radio" name="incMethods" value="0" checked="checked"> 时间戳</label>
+            </span>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>是否定时</label>
+            <span class="radio-inline">
+                <label><input type="radio" name="isTimer" value="1"> 即时</label>
+            </span>
+            <span class="radio-inline">
+                <label><input type="radio" name="isTimer" value="0" checked="checked"> 定时</label>
+            </span>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>目录位置</label>
+            <input type="text" class="form-control" name="catalog">
+        </div>
+        <div class="input-group" id="timerRules">
+            <label><span>*</span>定时规则</label>
+            <input type="text" class="form-control" name="timerRules">
+        </div>
+    </form>
+</div>

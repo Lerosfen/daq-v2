@@ -1,0 +1,209 @@
+.cleanRuleHtml p {
+    margin: 10px;
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CleanResultsName,#FusionResultName{
+    display: inline-block;
+    width: auto;
+}
+.view-data {
+    width: 15px;
+    height: 14px;
+    background: url("/resources/img/dataGovernance/view-data.png") no-repeat;
+}
+.file {
+    margin-top: 0px !important;
+    position: relative;
+    display: inline-block;
+    height: 60px !important;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 120px;
+    height: 32px;
+    cursor:pointer;
+}
+#checkDbLinkBtn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor:pointer;
+}
+.linetext {
+    font-size: 12px ;
+    font-family: SimSun;
+    fill:#1f77b4;
+    fill-opacity:0.0;
+}
+#DataMonitor{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    height: calc(100vh - 100px);
+}
+.ResultTop{
+    font-size: 20px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+}
+#DatamodelChant{
+    background: #fff;
+    height: 445px;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 49.5%;
+}
+.ResultLeft{
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ResultLeft p{
+    padding-top: 20px;
+    margin: 0;
+}
+.ResultLeft p span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+.ResultLeft p b{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 68px;
+}
+.ResultLeftOne{
+    height: 68px;
+    width: 157px;
+    background: url("/resources/img/blur.png") no-repeat;
+    background-size: 100% 100%;
+    color: #1f65de;
+}
+.ResultLeftTwo{
+    height: 68px;
+    width: 157px;
+    background: url("/resources/img/green.png") no-repeat;
+    background-size: 100% 100%;
+    color: #02c5fd;
+}
+.ResultLeftThree{
+    height: 68px;
+    width: 157px;
+    background: url("/resources/img/orange.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fc9337;
+}
+#DatamodelNum{
+    background: #fff;
+    height: 445px;
+    border-radius: 4px;
+    width: 49.5%;
+}
+#DatamodelNum caption{
+    background: #f1f6fc;
+    font-size: 15px;
+    margin-top: 18px;
+}
+#Yesterday,#Today{
+    border-right: solid 1px #ecedf1;
+}
+#modeRanking{
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 425px;
+}
+.DatamodelBottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.DatamodelBottom table td{
+    text-align: center;
+}
+.DatamodelBottom table tr{
+    height: 42px;
+}
+#ModelCheckD{
+    margin-right: 0;
+    margin-left: 0;
+}
+#relationship{
+    width: 100%;
+    height: 380px;
+    background: #f2f2f2;
+}
+.ApplicationStyle{
+    height: auto;
+    max-height: 360px;
+    width: 100%;
+}
+.ApplicationStyle thead>tr{
+    border-top: 1px solid #EBEBEB;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.ApplicationStyle thead>tr>td{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+}
+#ApplicationTable tr{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #EBEBEB;
+}
+#ApplicationTable  tr>td {
+    text-align: left;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+.RelationDiagram,.RelationData{
+    height: 375px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 0;
+}
+#metamodelEditForm .input-group{
+    margin: 30px 0 0 0;
+}
+#metamodelEditForm{
+    margin-right: 60px;
+}
+.RelationData .right-tools>select {
+    width: 100%;
+    margin-bottom:15px;
+}
+.RelationData  lable{
+    font-size: 14px;
+    color: #7F8B97;
+    margin: 0 0 10px 0;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+#ModelCheckD textarea{
+    width: 635px;
+    height: 85px;
+}
+.addBold{
+    font-weight: bold;
+}

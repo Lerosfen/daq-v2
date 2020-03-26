@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/resources/css/entityModel.css">
+<style>
+    .form-metadata-table>thead>tr>td,.form-metadata-table>tbody>tr>td{
+        width: 150px !important;
+    }
+</style>
+<div>
+    <form id="viewEntityModelForm" class="yunpi-form">
+        <div class="input-group">
+            <label>实体模型名称</label>
+            <input type="text" class="form-control" name="modelName" readonly="readonly">
+        </div>
+        <div class="input-group">
+            <label>编码</label>
+            <input type="text" class="form-control" name="modelCode" readonly="readonly">
+        </div>
+        <div class="input-group">
+            <label>主题</label>
+            <select class="form-control" name="themeType" disabled="disabled">
+                <option value="" selected="selected">人口</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>数据元提供单位</label>
+            <select class="form-control" name="metaDataUnit"  disabled="disabled">
+                <option value="" selected="selected">医疗</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>所属领域</label>
+            <select class="form-control" name="belongDomain"  disabled="disabled">
+                <option value="" selected="selected">人口</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>数据元</label>
+            <select class="form-control" name="metaData"  disabled="disabled">
+                <option value="" selected="selected">医疗</option>
+            </select>
+        </div>
+        <div class="tableContainer">
+            <table id="viewEntityModeltable" class="form-metadata-table">
+                <thead>
+                <tr><td>元数据字段</td><td>元数据描述</td><td>数据类型</td></tr>
+                </thead>
+                <tbody id="viewColsTable"></tbody>
+            </table>
+        </div>
+    </form>
+</div>
+<script src="/controller/dataGovernance/entityModel.js"></script>
+<script src="/controller/dataGovernance/entityModel-mock.js"></script>

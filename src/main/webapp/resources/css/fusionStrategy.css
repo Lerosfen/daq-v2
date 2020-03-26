@@ -1,0 +1,166 @@
+.paintPage{
+    display: flex;
+    clear: both;
+    margin-left: 40px;
+    user-select: none;
+}
+.modelContent{
+    width: 12%;
+    height: 600px;
+    background: #F2F2F2;
+}
+#paint{
+    width: 50%;
+    height: 600px;
+    background: #ddd;
+}
+.tableContent{
+    width: 30%;
+    height: 600px;
+    position: relative;
+    border: 2px solid #F2F2F2;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.selTbl{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+}
+.selTbl>thead{
+    display: table;
+    background: #e5edf8;
+    width: 100%;
+}
+.selTbl>thead>tr>td{
+    /*  width: 112px;
+      height: 30px;*/
+}
+.selTbl>tbody>tr>td{
+    height: 51px;
+}
+.selTbl>tbody>tr:hover{
+    background: #f1f6fd
+}
+.selTbl>tbody{
+    display: inline-block;
+    max-height: 460px;
+    overflow: auto;
+    width: 100%;
+}
+.selTbl>thead>tr>td:first-child,  .selTbl>tbody>tr>td:first-child {
+    width: 100px;
+}
+.selTbl>thead>tr>td:nth-child(2), .selTbl>tbody>tr>td:nth-child(2) {
+    width: 100px;
+}
+.selTbl>thead>tr>td:nth-child(3), .selTbl>tbody>tr>td:nth-child(3) {
+    width: 170px;
+}
+.selTbl>thead>tr>td:nth-child(4), .selTbl>tbody>tr>td:nth-child(4) {
+    width: 100px;
+    text-align: center;
+}
+.selTbl>tbody select{
+    margin-left: -10px;
+}
+.modelContent>.model{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #7F8B97;
+    margin: 40px auto;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+.tableContent>span.nodata{
+    position: absolute;
+    left: 40%;
+    top: 211px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(148,152,162,1);
+}
+#mainTable>thead>tr>td:first-child, #mainTable>tbody>tr>td:first-child{
+    width:  50px;
+}
+#mainTable>thead>tr>td:nth-child(2), #mainTable>tbody>tr>td:nth-child(2){
+    width:  100px;
+}
+#mainTable>thead>tr>td:nth-child(3), #mainTable>tbody>tr>td:nth-child(3){
+    width:  200px;
+}
+
+/*右键菜单栏*/
+#contextMenu{
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    z-index: 100000;
+}
+
+#contextMenu>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contextMenu>ul>li{
+    width: 130px;
+    height: 40px;
+    display: inline-block;
+    background: rgba(143,152,173,1);
+    line-height: 40px;
+    cursor: pointer;
+}
+#contextMenu>ul>li>span:last-child{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    margin-left: 10px;
+}
+#contextMenu>ul>li:first-child{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#contextMenu>ul>li:last-child{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#contextMenu>ul>li:hover{
+    background:rgba(118,128,151,1);
+}
+#contextMenu>ul>li>span:first-child{
+    display: inline-block;
+    margin-left: 20px;
+}
+#contextMenu>ul>li>span.addIcon{
+    width: 14px;
+    height: 14px;
+    background: url("/resources/img/dataGovernance/addIcon.png") no-repeat;
+}
+#contextMenu>ul>li>span.delIcon{
+    width: 12px;
+    height: 13px;
+    background: url("/resources/img/dataGovernance/delIcon.png") no-repeat;
+}
+.saveBtn{
+    position: absolute;
+    left: 35%;
+    bottom: 2%;
+}
+.input-Groups{
+    margin-bottom: 20px;
+}
+.tblTypeTitle{
+    min-width: 60px !important;
+    margin-top: 5px !important;
+    float: left;
+}
+.mainKey{
+    color: #7F8B97;
+    font-weight: bold;
+    margin: 10px
+}

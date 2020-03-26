@@ -1,0 +1,50 @@
+#paint{
+    width: 50%;
+    height: 450px;
+    background: #F2F2F2;
+    margin-left: 90px;
+    margin-top: 245px;
+}
+.applyTable{
+    float: right;
+    width: 35%;
+    margin-top: 118px;
+    margin-right: -359px;
+}
+.applyTable>thead{
+    display: table;
+    background: #e5edf8;
+}
+.applyTable>thead>tr>td, .applyTable>tbody>tr>td{
+    width: 112px;
+    height: 35px;
+}
+.applyTable>thead>tr>td:first-child, .applyTable>tbody>tr>td:first-child{
+    width: 40px;
+}
+.applyTable>tbody>tr:hover{
+    background: #f1f6fd
+}
+.applyTable>tbody{
+    display: inline-block;
+    max-height: 284px;
+    overflow: auto;
+}
+span.noData{
+    position: absolute;
+    left: 74%;
+    top: 540px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(148,152,162,1);
+}
+.applyData{
+    float: right;
+    margin-bottom: -60px;
+    margin-right: 88px;
+}
+.saveBtn{
+    float: right;
+    margin-right: 160px;
+    margin-top: -30px;
+}

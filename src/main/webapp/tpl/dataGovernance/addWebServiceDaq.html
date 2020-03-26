@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="/resources/css/entityModel.css">
+<style>
+    .addTable{
+        width: 520px;
+        float: left;
+        margin-top: 20px;
+    }
+    .addTable>thead>tr>td:first-child,.addTable>tbody>tr>td:first-child{
+        width: 200px;
+    }
+    .addTable>thead>tr>td,.addTable>tbody>tr>td{
+        width: 200px;
+    }
+</style>
+<form id="addWebServiceDaqFrom">
+    <div class="input-group">
+        <label><span>*</span>接口名称</label>
+        <input type="text" class="form-control" name="wsName" required="required" placeholder="请输入接口名称">
+    </div>
+    <div class="input-group">
+        <label><span>*</span>接口编码</label>
+        <input type="text" class="form-control" name="wsCode" required="required" placeholder="请输入接口编码">
+    </div>
+    <div class="input-group">
+        <label style="min-width: 300px;">元数据映射</label>
+    </div>
+    <div class="input-group">
+        <label><span>*</span>数据元提供单位</label>
+        <select class="form-control" name="provideDepartment" required="required">
+            <option selected="selected" value="">--请选择--</option>
+            <option value="1">单位X</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label><span>*</span>所属领域</label>
+        <select class="form-control" name="belongTo" required="required">
+            <option selected="selected" value="">--请选择--</option>
+            <option value="1">领域X</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label><span>*</span>数据元</label>
+        <select class="form-control" name="metaData" required="required">
+            <option selected="selected" value="">--请选择--</option>
+            <option value="1">数据元X</option>
+        </select>
+    </div>
+    <table class="form-metadata-table addTable">
+        <thead>
+        <tr>
+            <td>元数据字段</td>
+            <td>元数据描述</td>
+            <td>映射接口数据项</td>
+        </tr>
+        </thead>
+        <tbody id="addDaqTable"></tbody>
+    </table>
+</form>

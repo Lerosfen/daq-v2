@@ -1,0 +1,49 @@
+.pcTable{
+    width: 16px;
+    height: 14px;
+    background: url("/resources/img/dataGovernance/pcTable.png") no-repeat;
+}
+.rePcTable{
+    width: 14px;
+    height: 14px;
+    background: url("/resources/img/dataGovernance/rePcTable.png") no-repeat;
+}
+.execute{
+    width: 12px;
+    height: 14px;
+    background: url("/resources/img/dataGovernance/execute.png") no-repeat;
+}
+.view-data{
+    width: 15px;
+    height: 14px;
+    background: url("/resources/img/dataGovernance/view-data.png") no-repeat;
+}
+.tableContainer{
+    clear: both;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.form-metadata-table{
+    width: 450px;
+}
+.form-metadata-table>thead>tr>td,.form-metadata-table>tbody>tr>td{
+    width: 140px;
+}
+.form-metadata-table>thead>tr>td:first-child,.form-metadata-table>tbody>tr>td:first-child{
+    width: 40px;
+}
+.form-metadata-table>tbody>tr>td:nth-child(3),.form-metadata-table>tbody>tr>td:nth-child(4){
+    padding-left: 18px;
+}
+.form-metadata-table>thead{
+    display: table;
+    background: #e5edf8;
+}
+.form-metadata-table>tbody>tr:hover{
+    background: #f1f6fd
+}
+.form-metadata-table>tbody{
+    display: inline-block;
+    max-height: 300px;
+    overflow: auto;
+}

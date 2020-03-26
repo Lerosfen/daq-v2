@@ -1,0 +1,73 @@
+<div class="yunpi-page">
+    <div class="row" id="operationMonitor">
+        <div class="col-md-3 col-lg-3" id="OperationCpu">
+            <div id="OperaIcon"  style="margin-top: 10px;
+            border-bottom: solid 1px #ebebeb;
+            padding-bottom: 10px;
+            padding-left: 0;">
+                <img src="/resources/img/neicunIco.png">
+                <span>CPU运行监控</span>
+            </div>
+            <div class="EchantPartent">
+                <div id="CpuOperation"></div>
+                <div id="pie"></div>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-9" id="MemoryMonitor">
+            <div id="OperaIconOne"  style="margin-top: 10px;
+            border-bottom: solid 1px #ebebeb;
+            padding-bottom: 10px;
+            padding-left: 0;">
+                <img src="/resources/img/neicunIco.png">
+                <span>内存监控</span>
+            </div>
+            <div id="CpuOperationBox">
+                <div id="CpuOperationOne" class="col-md-5 col-lg-5"></div>
+                <div id="total" class="col-md-3 col-lg-3">
+                    <p id="TotalMumber">256<span>GB</span></p>
+                    <p id="TotalMemory">磁盘总量</p>
+                </div>
+                <div id="UtilizationRate" class="col-md-4 col-lg-4">
+                    <!--里层水波-->
+                    <div id="UtilizationRateInner"></div>
+                    <!--外层扇形-->
+                    <div id="UtilizationRateOther"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-lg-12" id="DiskMonitoring" style="margin-top: 10px;">
+            <div id="OperaIconTwo">
+                <img src="/resources/img/neicunIco.png">
+                <span>磁盘监控</span>
+            </div>
+            <div class="OperaPartent" >
+                <div id="OperaPartentLeft" class="col-md-3 col-lg-3">
+                    <div  id="OperaIcontion" style="width:100%;height:260px;"></div>
+                    <div  id="OperaIcontionrate" style="width:100%;height:260px;"></div>
+                </div>
+                <div id="OperaTotal" class="col-md-2 col-lg-2">
+                    <div id="OperaTotalTop">
+                        <p id="OperaMumber">256<span>GB</span></p>
+                        <p id="OperaMemory">磁盘总量</p>
+                    </div>
+                    <div id="OperaTotalBottom">
+                        <p id="OperaMumberBottom">0<span>M/S</span></p>
+                        <!--<p id="UsingInterval">-->
+                            <!--<span id="Highest">最高60M/S</span>-->
+                            <!--<span id="minimum">最低10M/S</span>-->
+                        <!--</p>-->
+                        <p id="OperaMemoryBottom">读写速度</p>
+                    </div>
+                </div>
+                <!--<div class="col-md-4 col-lg-4" id="CpuOperationTwo" style="height:400px;"></div>-->
+                <div class="col-md-7 col-lg-7" id="Statistics">
+                    <div id="CpuOperationCategory" style="height:260px;"></div>
+                    <div id="MonthlyStatistics" style="height:260px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/controller/monitor/OperationMonitor.js"></script>
+<script src="/controller/monitor/operationMonitor-mock-server.js"></script>

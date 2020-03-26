@@ -1,0 +1,224 @@
+body{
+    user-select:none;
+}
+#addPage{
+    height: 100%;
+    padding: 30px;
+    display: none;
+}
+#AddStrategyName{
+    width:200px;
+    display: inline-block;
+}
+#addPage .blockSel{
+    width: 150px;
+    height: 650px;
+    background: #f2f2f2;
+    margin-top: 30px;
+    overflow: hidden;
+    float: left;
+}
+div.blockSel .ellipseTbl, div.blockSel .boxField{
+    width: 114px;
+    height: 43px;
+    /*margin: 50px auto;*/
+    margin-left: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.tableNoDrop{
+    background: url("/resources/img/dataGovernance/table-model.png") no-repeat;
+}
+.tableDrop{
+    background: url("/resources/img/dataGovernance/table-model-gray.png") no-repeat;
+}
+div.blockSel .boxField{
+    background: url("/resources/img/dataGovernance/field-model.png") no-repeat;
+}
+div.blockSel .arrows{
+    width: 108px;
+    height: 36px;
+    cursor: pointer;
+    margin-left: 21px;
+    margin-top: 40px;
+}
+.arrowsNosel{
+    background: url("/resources/img/dataGovernance/link-model-nosel.png") no-repeat;
+}
+.arrowsSel{
+    background: url("/resources/img/dataGovernance/link-model-sel.png") no-repeat;
+}
+.tblContainer{
+    float: left;
+    width: 447px;
+    height: 650px;
+    border: 1px solid #E4E4E4;
+    margin-top: 30px;
+    position: relative;
+}
+.tblContainer>span.nodata{
+    position: absolute;
+    left: 44%;
+    top: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(148,152,162,1);
+}
+body{
+    overflow-y: hidden;
+}
+div.footer{
+    clear: both;
+    text-align: center;
+}
+div.footer button{
+    margin: 45px 50px;
+}
+/* 画布样式 */
+#paint{
+    width: 950px;
+    height: 650px;
+    float: left;
+    background: transparent;
+    margin-top: 30px;
+    position: relative;
+    border: 1px solid #e4e4e4;
+    overflow: hidden;
+}
+#paint svg {
+    background: transparent;
+}
+.html-element {
+    position: absolute;
+    pointer-events: none;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tableModel {
+    background: url("/resources/img/dataGovernance/table-drag.png") no-repeat;
+}
+
+.fieldModel {
+    background: url("/resources/img/dataGovernance/field-drag.png") no-repeat;
+}
+.addFieldModel{
+    background: url("/resources/img/dataGovernance/field-add.png") no-repeat;
+}
+.contextMenuT{
+    background: #8d94a6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.contextMenuB{
+    background: #8d94a6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.contextMenuSpan{
+    background:#768197; height: 40px; line-height: 40px;
+}
+
+.html-element label {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.tableModel span, .fieldModel span{
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.addFieldModel span{
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.contextMenuB span{
+    margin-top: 0;
+}
+
+#contextMenus{
+    width: 130px;
+    height: 80px;
+    position: absolute;
+}
+
+#contextMenus>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contextMenus>ul>li{
+    width: 130px;
+    height: 40px;
+    display: inline-block;
+    background: rgba(143,152,173,1);
+    line-height: 40px;
+    cursor: pointer;
+}
+#contextMenus>ul>li>span:last-child{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    margin-left: 10px;
+}
+#contextMenus>ul>li:first-child{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#contextMenus>ul>li:last-child{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#contextMenus>ul>li:hover{
+    background:rgba(118,128,151,1);
+}
+#contextMenus>ul>li>span:first-child{
+    display: inline-block;
+    margin-left: 20px;
+}
+#contextMenus>ul>li>span.addIcon{
+    width: 14px;
+    height: 14px;
+    background: url("/resources/img/dataGovernance/addIcon.png") no-repeat;
+}
+#contextMenus>ul>li>span.delIcon{
+    width: 12px;
+    height: 13px;
+    background: url("/resources/img/dataGovernance/delIcon.png") no-repeat;
+}
+.form-metadata-table{
+    height: auto;
+    width: 445px;
+    margin: 0;
+}
+.form-metadata-table>thead{
+    display: table;
+    background: #e5edf8;
+}
+.form-metadata-table>thead>tr>td{
+    width: 112px;
+    height: 30px;
+}
+.form-metadata-table>tbody>tr>td{
+    height: 51px;
+}
+.form-metadata-table>tbody>tr:hover{
+    background: #f1f6fd
+}
+.form-metadata-table>tbody{
+    display: inline-block;
+    max-height: 610px;
+    overflow: auto;
+}

@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/resources/css/dataModelApply.css">
+<style>
+    .applyTable>thead>tr>td:first-child, .applyTable>tbody>tr>td:first-child{
+        width: 120px;
+    }
+</style>
+<div>
+    <form id="viewDataModelForm" class="yunpi-form">
+        <div class="input-group">
+            <label><span>*</span>申请标题</label>
+            <input type="text" class="form-control" name="applyTitle" readonly="readonly">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>数据主题</label>
+            <select class="form-control" name="dataTheme" disabled="disabled">
+                <option selected="selected" value="">--请选择--</option>
+                <option value="1">主题1</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>提供部门</label>
+            <input type="text" class="form-control" name="department" readonly="readonly">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>主实体模型</label>
+            <select class="form-control" name="mainModel" disabled="disabled">
+                <option selected="selected" value="">--请选择--</option>
+                <option value="1">模型X</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>描述</label>
+            <textarea name="desc" readonly="readonly"></textarea>
+        </div>
+        <div class="input-group applyData">
+            <label><span>*</span>申请数据</label>
+            <span class="radio-inline">
+                <label><input type="radio" name="isApply" value="y" disabled="disabled"> 是</label>
+            </span>
+            <span class="radio-inline">
+                <label><input type="radio" name="isApply" value="n" checked="checked" disabled="disabled"> 否</label>
+            </span>
+        </div>
+        <table class="form-metadata-table applyTable">
+            <thead>
+            <tr><td>字段名</td><td>字段描述</td></tr>
+            </thead>
+            <tbody id="addApplyTable"></tbody>
+        </table>
+        <span class="noData">暂无数据</span>
+    </form>
+    <div id="paint"></div>
+    <!--<button id="saveAddBtn" type="button" class="yunpi-btn yunpi-btn-blue saveBtn"><span class="glyphicon glyphicon-floppy-disk"></span>保存</button>-->
+</div>
+<script src="/controller/dataGovernance/dataModelApply.js"></script>
+<script src="/controller/dataGovernance/dataModelApply-mock.js"></script>

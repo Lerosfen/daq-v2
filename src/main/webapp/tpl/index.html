@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>云派大数据治理平台</title>
+  <link rel="icon" href="/resources/img/yunpi.png" type="image/x-png" />
+  <link rel="stylesheet" href="/resources/lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/resources/lib/yunpi-window-0.8/yunpi-windown.css">
+  <link rel="stylesheet" href="/resources/css/index.css">
+  <link rel="icon" href="/resources/img/favicon.ico">
+  <script type="text/javascript" src="/resources/lib/jquery-3.4.1.min.js" ></script>
+  <script type="text/javascript" src="/resources/lib/jquery.cookie.js" ></script>
+  <script src="/resources/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="/resources/lib/yunpi-base.js"></script>
+  <script src="/resources/lib/yunpi-window-0.8/yunpi-window.js"></script>
+  <script src="/resources/lib/yunpi-browser-tools-1.0.js"></script>
+  <script src="/controller/index.js"></script>
+</head>
+<body>
+  <!-- 首页头部 -->
+  <div class="index-header">
+    <span class="logo"></span>
+    <span class="systemIcon"></span>
+    <span class="systemTitle">子系统选择</span>
+    <div class="self-tool">
+      <label><p class="user-name">张麻子</p>,欢迎你！</label>
+        <!--用户头像-->
+      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <!--消息-->
+      <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+        <!--主题选择-->
+        <span>
+            <select id="yunpiThemes">
+                <option value="darkblue" selected="selected">深海蓝</option>
+                <option value="lightblue">天空蓝</option>
+                <option value="red">中国红</option>
+                <option value="black">科技黑</option>
+            </select>
+        </span>
+        <!--帮助按钮-->
+      <span class="glyphicon glyphicon-question-sign" id="helpBtn" aria-hidden="true"></span>
+      <span><a href="/tpl/login.html" class="glyphicon glyphicon-log-out" aria-hidden="true"></a></span>
+    </div>
+  </div>
+  <!-- 首页内容 -->
+  <div class="index-body">
+      <div class="cardContainer">
+          <div class="card dataGovernance">
+              <div class="cardImg cardImg1"></div>
+              <span class="cardTitle">数据治理</span>
+          </div>
+          <div class="card qc">
+              <div class="cardImg cardImg2"></div>
+              <span class="cardTitle">质量管理系统</span>
+          </div>
+          <div class="card pedigree">
+              <div class="cardImg cardImg3"></div>
+              <span class="cardTitle">血统分析</span>
+          </div>
+          <div class="card visualization">
+              <div class="cardImg cardImg4"></div>
+              <span class="cardTitle">数据可视化系统</span>
+          </div>
+          <div class="card monitor">
+              <div class="cardImg cardImg5"></div>
+              <span class="cardTitle">运行监控系统</span>
+          </div>
+          <div class="card basicManage">
+              <div class="cardImg cardImg6"></div>
+              <span class="cardTitle">基础管理系统</span>
+          </div>
+          <div class="card logManage">
+              <div class="cardImg cardImg7"></div>
+              <span class="cardTitle">日志管理系统</span>
+          </div>
+
+
+      </div>
+      <div class="cardLine"></div>
+      <div class="index-footer">
+          <div class="logo"></div>
+          <p>版权归西安云基华海信息技术有限公司所有</p>
+          <p>©copyright by YJHH</p>
+      </div>
+  </div>
+</body>
+</html>

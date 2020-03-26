@@ -1,0 +1,227 @@
+/**
+业务操作页面样式
+ */
+input, button, select, textarea{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+.yunpi-page{
+    background-color: #F1F6FD;
+    height: 100%;
+}
+
+#homeContent{
+    height: calc(100vh - 90px);
+}
+
+.table-header-tools{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #FFFFFF;
+    margin: 0 0 10px 0;
+    padding: 0;
+    vertical-align: center;
+    position: relative;
+}
+
+.table-header-tools .left-tools{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    line-height: 30px;
+}
+.table-header-tools button{
+    margin-right: 20px;
+}
+.table-header-tools lable{
+    color: #737E8A;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    text-align: right;
+}
+.right-tools>input,.right-tools>select{
+    color: #737E8A;
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+    border: 1px solid #EBEBEB;
+    border-radius:3px;
+    margin-right: 10px;
+}
+
+.table-header-tools .right-tools{
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    line-height: 30px;
+}
+/*yunpi按钮*/
+.yunpi-btn{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 30px;
+    width: 120px;
+    outline:none;
+    vertical-align: center;
+    border-radius:15px;
+    line-height: 15px;
+    margin: 0;
+}
+.yunpi-btn>span{
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+/*蓝色按钮*/
+.yunpi-btn-blue{
+    color: #FFFFFF;
+    background-color: #4b90ff;
+    border: #4b90ff;
+}
+.yunpi-btn-blue:hover{
+    color: #FFFFFF;
+    background-color: #4b90ff;
+    border: #4b90ff;
+}
+.yunpi-btn-blue:active{
+    color: #FFFFFF;
+    background-color: #4b90ff;
+    border: #4b90ff;
+}
+.yunpi-btn-blue:focus{
+    color: #FFFFFF;
+    background-color: #4b90ff;
+    border: #4b90ff;
+}
+
+/*灰色按钮*/
+.yunpi-btn-gray{
+    color: #FFFFFF;
+    background-color: #C5CBD4;
+    border: #C5CBD4;
+}
+.yunpi-btn-gray:hover{
+    color: #FFFFFF;
+    background-color: #C5CBD4;
+    border: #C5CBD4;
+}
+.yunpi-btn-gray:active{
+    color: #FFFFFF;
+    background-color: #C5CBD4;
+    border: #C5CBD4;
+}
+.yunpi-btn-gray:focus{
+    color: #FFFFFF;
+    background-color: #C5CBD4;
+    border: #C5CBD4;
+}
+
+/*全局设置：定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    /*-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);*/
+    border-radius: 5px;
+    background-color: #d5dfef;
+}
+
+/*全局设置：定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+    background-color: #FFFFFF;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 10px;
+    height: 12px;
+    background-color: #F1F6FD;
+}
+
+/*表格布局的样式*/
+.form-layout{
+    margin: 22px 0 0 0;
+}
+.form-layout thead{
+    text-align: left;
+}
+.form-layout>tr{
+    height: 40px;
+    line-height: 30px;
+}
+.form-layout td{
+    text-align: right;
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.form-layout input{
+    width: 80px;
+    height: 30px;
+}
+
+/*字符画样式，适用于移除图标*/
+.removeItem{
+    color: red;
+    float: right;
+    display: inline-flex;
+    margin-top: 3px;
+    cursor:pointer;
+}
+
+/**
+左右分割的模块给左边模块加右边框
+ */
+.split-left{
+    float: left;
+    display: block;
+    clear: both;
+    border-right: 1px solid #E5ECF7;
+}
+/**
+左右分割的模块给右边模块加左边框
+ */
+.split-right{
+    border-left: 1px solid #E5ECF7;
+    position: absolute;
+    right: 1px;
+    top: 0;
+}
+
+/*表格布局的样式*/
+.form-metadata-table{
+    height:auto;
+    max-height: 360px;
+    width:740px;
+    margin: 20px 0 0 40px;
+}
+
+.form-metadata-table thead>tr{
+    border-top:1px solid #EBEBEB;
+}
+.form-metadata-table thead>tr>td{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.form-metadata-table tr{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.form-metadata-table tbody>tr>td{
+    text-align: left;
+    padding-left: 10px;
+    width: 147px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.yunpi-themes{
+    height: 26px;
+}

@@ -1,0 +1,164 @@
+/**
+首页样式
+ */
+body{
+    overflow: hidden;
+    background: #EAEAEA !important;
+}
+.index-header{
+    width: 100%;
+    height: 78px;
+    background-color: #F1F6FD;
+}
+
+.index-header .logo{
+    display: inline-block;
+    width: 218px;
+    height: 78px;
+    background: url('../img/index/logo.png') no-repeat;
+}
+.index-header .systemIcon{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/index/system icon.png") no-repeat;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.index-header .systemTitle{
+    display: inline-block;
+    font-size: 20px;
+    color: #515863;
+    font-weight: bold;
+    margin-left: 30px;
+    transform: translateY(-30px);
+}
+.self-tool{
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    height: 10px;
+    line-height: 10px;
+}
+.self-tool lable{
+    font-size: 14px;
+    color:#707070;
+}
+.self-tool .user-name{
+    display: inline-block;
+}
+.self-tool span{
+    margin: 0 15px 0 20px;
+    color: #1D66DC;
+    font-size: 14px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    cursor:pointer;
+}
+.index-body{
+    width: 100%;
+    height: calc(100vh - 90px);;
+    background-color: #EAEAEA;
+
+}
+.index-body .cardContainer{
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.index-body div.card{
+    width: 263px;
+    height: 199px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 140px;
+    margin-top: 160px;
+    border-radius: 5px;
+}
+.index-body div.dataGovernance{
+    background: url("../img/index/card1.png");
+}
+.index-body div.qc{
+    background: url("../img/index/card2.png");
+}
+.index-body div.pedigree{
+    background: url("../img/index/card3.png");
+}
+.index-body div.visualization{
+    background: url("../img/index/card4.png");
+}
+.index-body div.monitor{
+    background: url("../img/index/card5.png");
+}
+.index-body div.basicManage{
+    background: url("../img/index/card6.png");
+}
+.index-body div.logManage{
+    background: url("../img/index/card7.png");
+}
+.index-body div.card div.cardImg{
+    width: 149px;
+    height: 149px;
+    margin-left: -70px;
+    margin-top: 30px;
+    transition: all .3s ease-out;
+}
+.index-body div.card div.cardImg1{
+    background: url("../img/index/card1-img.png") no-repeat;
+}
+.index-body div.card div.cardImg2{
+    background: url("../img/index/card2-img.png") no-repeat;
+}
+.index-body div.card div.cardImg3{
+    background: url("../img/index/card3-img.png") no-repeat;
+}
+.index-body div.card div.cardImg4{
+    background: url("../img/index/card4-img.png") no-repeat;
+}
+.index-body div.card div.cardImg5{
+    background: url("../img/index/card5-img.png") no-repeat;
+}
+.index-body div.card div.cardImg6{
+    background: url("../img/index/card6-img.png") no-repeat;
+}
+.index-body div.card div.cardImg7{
+    background: url("../img/index/card7-img.png") no-repeat;
+}
+.index-body div.card:hover div.cardImg{
+    transform: translateY(-30px);
+}
+
+.index-body div.card span.cardTitle{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3f4750;
+    position: absolute;
+    left: 88px;
+    top: 110px;
+}
+.index-body .cardLine{
+    width: 1625px;
+    height: 2px;
+    background: #cedaea;
+    position: fixed;
+    left: 159px;
+    top: 517px;
+}
+
+.index-footer{
+    text-align: center;
+    color: #b0bdc5;
+    margin-top: 150px;
+}
+.index-footer .logo{
+    width: 174px;
+    height: 17px;
+    margin: 0 auto;
+    background: url("/resources/img/index/login-logo.png") no-repeat;
+}
+.index-footer p{
+    margin-top: 8px;
+}

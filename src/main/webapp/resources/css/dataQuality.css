@@ -1,0 +1,81 @@
+.popover-inner{
+    position: fixed;
+    top: 82.3px;
+    background: #F1F6FD;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    z-index: 99999;
+}
+.popover{
+    width: 0px !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    background-color: #4b90ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid transparent !important;
+    border-top-color: #E2E2E2 !important;
+    border-left-color: #E2E2E2 !important;
+    border-right-color: #E2E2E2 !important;
+}
+.nav-tabs > li > a,.nav > li > a:hover, .nav > li > a:focus{
+    background-color: #f1f6fd;
+    color: #5f656a;
+    border: none;
+}
+.nav-tabs{
+    border: none;
+}
+span.input-group-btn{
+    display: inline-block;
+    margin-top: -2.2px;
+}
+span.input-group-btn button{
+    outline: 0 !important;
+}
+
+input[type='radio']{
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    display: inline-block;
+}
+.dataQuality-warning{
+    color: #EC3159;
+}
+.dataQuality-normal{
+    color: #19C586;
+}
+.glyphicon-bell{
+    font-size: 20px;
+}
+.reportContentTop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+#ResultRight div{
+    width: 100%;
+}
+.ResultLeft{
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+}
+#metadataSetuptable{
+    margin: 0px 0 0 40px;
+}
+

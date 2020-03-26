@@ -1,0 +1,132 @@
+<style>
+    .paintPage{
+        display: flex;
+        clear: both;
+        margin-left: 40px;
+        user-select: none;
+    }
+    .modelContent{
+        width: 12%;
+        height: 600px;
+        background: #F2F2F2;
+    }
+    #paint{
+        width: 60%;
+        height: 600px;
+        background: #ddd;
+    }
+    .tableContent{
+        width: 25%;
+        height: 600px;
+        position: relative;
+        border: 2px solid #F2F2F2;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+    #fillTbl{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+    #fillTbl>thead{
+        display: table;
+        background: #e5edf8;
+        width: 100%;
+    }
+   #fillTbl>thead>tr>td{
+      /*  width: 112px;
+        height: 30px;*/
+    }
+    #fillTbl>tbody>tr>td{
+        height: 51px;
+    }
+   #fillTbl>tbody>tr:hover{
+        background: #f1f6fd
+    }
+   #fillTbl>tbody{
+        display: inline-block;
+        max-height: 506px;
+        overflow: auto;
+       width: 100%;
+    }
+   #fillTbl>thead>tr>td:first-child,  #fillTbl>tbody>tr>td:first-child {
+        width: 85px;
+    }
+    #fillTbl>thead>tr>td:nth-child(2), #fillTbl>tbody>tr>td:nth-child(2) {
+        width: 100px;
+    }
+    #fillTbl>thead>tr>td:nth-child(3), #fillTbl>tbody>tr>td:nth-child(3) {
+        width: 150px;
+    }
+    #fillTbl>tbody select{
+        margin-left: -10px;
+    }
+    .modelContent>.model{
+        width: 100px;
+        height: 40px;
+        border: 1px solid #7F8B97;
+        margin: 40px auto;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+    }
+    .tableContent>span.nodata{
+        position: absolute;
+        left: 40%;
+        top: 211px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgba(148,152,162,1);
+    }
+</style>
+<div>
+    <div class="input-group" style="margin-bottom: 20px;">
+        <label style="min-width: 0px;float: left;margin-top: 6px;margin-right: 15px;">表类型</label>
+        <select class="form-control" name="tableTypeSel">
+            <option value="">--请选择--</option>
+            <option value="1">采集目标</option>
+            <option value="2">清洗目标</option>
+            <option value="3">融合目标</option>
+        </select>
+    </div>
+    <div class="paintPage">
+        <div class="modelContent">
+            <div class="model daqTbl">采集表1</div>
+            <div class="model daqTbl">采集表2</div>
+            <div class="model daqTbl">采集表3</div>
+            <div class="model cleanTbl">清洗表1</div>
+            <div class="model cleanTbl">清洗表2</div>
+            <div class="model fuseTbl">融合表1</div>
+            <div class="model fuseTbl">融合表2</div>
+            <div class="model fuseTbl">融合表3</div>
+            <div class="model fuseTbl">融合表4</div>
+        </div>
+        <div id="paint"></div>
+        <div class="tableContent">
+            <span style="color: #7F8B97;font-weight: bold;margin: 10px">主键</span>
+            <select  name="selMainKey" data-live-search-placeholder="请选择元数据" multiple="multiple" data-animate="slide">
+                <option value="1">元数据c</option>
+                <option value="2">元数据b</option>
+                <option value="3">元数据f</option>
+                <option value="4">元数据g</option>
+                <option value="5">元数据y</option>
+                <option value="6">元数据z</option>
+                <option value="1">元数据c</option>
+                <option value="2">元数据b</option>
+                <option value="3">元数据f</option>
+                <option value="4">元数据y</option>
+                <option value="5">元数据b</option>
+                <option value="6">元数据p</option>
+            </select>
+            <span class="nodata">暂无数据</span>
+            <table class="form-metadata-table" id="fillTbl">
+                <thead>
+                <tr><td>字段</td><td>描述</td><td>关联字段</td></tr>
+                </thead>
+                <tbody id="tblFieldTable"></tbody>
+            </table>
+        </div>
+    </div>
+</div>

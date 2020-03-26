@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/resources/css/entityModel.css">
+<div>
+    <form id="addEntityModelForm" class="yunpi-form">
+        <div class="input-group">
+            <label><span>*</span>实体模型名称</label>
+            <input type="text" placeholder="请输入实体模型名称" class="form-control" name="modelName" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>编码</label>
+            <input type="text" placeholder="请输入编码" class="form-control" name="modelCode" required="required">
+        </div>
+        <div class="input-group">
+            <label><span>*</span>主题</label>
+            <select class="form-control" name="themeType" required="required">
+                <option selected="selected" value="">--请选择--</option>
+                <!--<option value="1">人口</option>
+                <option value="2">医疗</option>
+                <option value="3">环保</option>-->
+            </select>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>数据元提供单位</label>
+            <select class="form-control" name="metaDataUnit" required="required">
+                <option selected="selected" value="">--请选择--</option>
+                <option value="1">人口</option>
+                <option value="2">医疗</option>
+                <option value="3">环保</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>所属领域</label>
+            <select class="form-control" name="belongDomain" required="required">
+                <option selected="selected" value="">--请选择--</option>
+                <option value="1">人口</option>
+                <option value="2">医疗</option>
+                <option value="3">环保</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label><span>*</span>数据元</label>
+            <select class="form-control" name="metaData" required="required">
+                <option selected="selected" value="">--请选择--</option>
+                <option value="1">人口</option>
+                <option value="2">医疗</option>
+                <option value="3">环保</option>
+            </select>
+        </div>
+        <div class="tableContainer">
+            <table id="addEntityModeltable" class="form-metadata-table">
+                <thead>
+                <tr><td><input name="checkedAll" type="checkbox"></td><td>元数据字段</td><td>元数据描述</td><td>数据类型</td></tr>
+                </thead>
+                <tbody id="addColsTable"></tbody>
+            </table>
+        </div>
+    </form>
+</div>
+<script src="/controller/dataGovernance/entityModel.js"></script>
+<script src="/controller/dataGovernance/entityModel-mock.js"></script>
