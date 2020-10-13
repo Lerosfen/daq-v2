@@ -28,7 +28,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <!--支持 Web 应用开发，包含 Tomcat 和 spring-mvc。 -->
